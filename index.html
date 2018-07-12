@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Upload/Delete Image Js</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+</body>
+<div class="container">
+        <div class="row">
+            <div class="container" id="formContainer">
+              <form class="form-signin" id="form" role="form">
+                <button class="btn btn-lg btn-primary btn-block" type="button" id="blue-but">
+                        <input type="file" name="imagen" id="imagen" accept="image/*"/>
+                </button>
+              </form>
+              <form class="form-signin" id="recover" role="form">
+                <h3 class="form-signin-heading">Vista Previa</h3> 
+              </form>
+            </div>
+            <button title="Eliminar" type="button" id="cancelImg" onclick="limpiar()">
+            <span class="glyphicon glyphicon-remove"></span>
+            </button> 
+            <img id="previsual" style="display:none"/>
+        </div>
+    </div>
+<script src="js.js"></script>
+</html>
